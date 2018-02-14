@@ -1,0 +1,47 @@
+{
+    "name": "electron-impacto-tecnologico",
+    "version": "1.0.0",
+    "description": "Ejemplo tutorial de electron js",
+    "main": "main.js",
+    "dependencies": {
+        "jquery": "^3.3.1"
+    },
+    "devDependencies": {
+        "electron": "^1.8.2",
+        "electron-builder": "^20.0.4"
+    },
+    "scripts": {
+        "start": "electron main.js",
+        "pack": "build --dir",
+        "dist": "build",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "build": {
+        "appId": "enupal-electronv1",
+        "asar": true,
+        "dmg": {
+            "contents": [{
+                "x": 110,
+                "y": 150
+            }, {
+                "x": 240,
+                "y": 150,
+                "type": "link",
+                "path": "/Applications"
+            }]
+        },
+        "linux": {
+            "target": [
+                "AppImage",
+                "deb"
+            ],
+            "icon": "build/favicon.ico"
+        },
+        "win": {
+            "target": "NSIS",
+            "icon": "build/favicon.ico"
+        }
+    },
+    "author": "Ricardo Omaña",
+    "license": "ISC"
+}
