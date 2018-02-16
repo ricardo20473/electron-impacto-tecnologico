@@ -38,7 +38,7 @@
         },
         "win": {
             "target": "NSIS",
-            "icon": "build/favicon.ico"
+            "icon": "assets/img/favicon-160x60.ico"
         }
     },
     "author": "Ricardo Omaña",

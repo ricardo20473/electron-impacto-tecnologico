@@ -1,4 +1,5 @@
 html {
+    margin: 0;
     position: relative;
     min-height: 100%;
 }
@@ -129,9 +130,37 @@ body {
     border-bottom: solid 1px #9bc93d;
 }
 
+.menu ul li .active {
+    color: #9bc93d;
+    border-bottom: solid 1px #9bc93d;
+}
+
 .form-control:focus {
     border-color: #7ca231 !important;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(155, 201, 61) !important;
     -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(155, 201, 61) !important;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(155, 201, 61) !important;
+}
+
+.subtitle {
+    color: #9bca3d;
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.info-text {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.content-center {
+    display: flex;
+    align-items: center;
+}
+
+.content-position {
+    position: absolute;
+    padding-right: 150px;
 }
