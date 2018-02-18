@@ -17,7 +17,7 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "build": {
-        "appId": "enupal-electronv1",
+        "appId": "electron-impacto-tecnologico",
         "asar": true,
         "dmg": {
             "contents": [{
@@ -41,6 +41,6 @@
             "icon": "assets/img/favicon-160x60.ico"
         }
     },
-    "author": "Ricardo Omaña",
+    "author": "Ricardo Omaña <ricardo20473@gmail.com>",
     "license": "ISC"
 }
